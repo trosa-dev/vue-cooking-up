@@ -39,7 +39,7 @@ body {
 	font-size: 16px;
 	font-weight: 400;
 	font-style: normal;
-	background: url('./imagens/background-banner.png'), var(--verde-escuro, #263A29);
+	background: url('./images/background-banner.png'), var(--verde-escuro, #263A29);
 }
 
 .header-lg {
