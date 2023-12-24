@@ -7,12 +7,10 @@ export default {}
     <div class="presentation">
       <img src="../assets/images/logo.svg" alt="Cooking Up Logo" class="logo" />
       <p class="header-lg phrase-header">
-        <span class="text-verde">Um banquete de ideias para</span>
-        despertar o chef que há em você!
+        <span class="text-verde">A feast of ideas for</span>
+        awaken the chef in you!
       </p>
-      <p class="subtitle-lg">
-        Explore novas receitas todos os dias com os ingredientes que estão ao seu alcance!
-      </p>
+      <p class="subtitle-lg">Explore new recipes every day with ingredients at your fingertips!</p>
     </div>
 
     <img src="../assets/images/image-banner.png" alt="" class="image-banner" />
