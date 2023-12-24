@@ -10,11 +10,16 @@ export default {
   <main class="main-content">
     <section>
       <span class="subtitle-lg your-list-text"> Your list: </span>
-      <ul class="your-ingredients-list">
+      <ul v-if="ingredients.length > 0" class="your-ingredients-list">
         <li v-for="(ingredient, index) in ingredients" v-bind:key="index" class="ingredient">
           {{ ingredient }}
         </li>
       </ul>
+
+      <p v-else class="paragraph empty-list">
+        <img src="../assets/images/icons/empty-list.svg" alt="search icon" />
+        Your list is empty, select ingredients to start.
+      </p>
     </section>
   </main>
 </template>
