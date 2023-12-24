@@ -1,8 +1,11 @@
 <script lang="ts">
+import IngredientsSelectionVue from './IngredientsSelection.vue'
+
 export default {
   data() {
     return { ingredients: ['Garlic', 'Butter', 'Oregano'] }
-  }
+  },
+  components: { IngredientsSelectionVue }
 }
 </script>
 
@@ -21,6 +24,7 @@ export default {
         Your list is empty, select ingredients to start.
       </p>
     </section>
+    <IngredientsSelectionVue />
   </main>
 </template>
 
