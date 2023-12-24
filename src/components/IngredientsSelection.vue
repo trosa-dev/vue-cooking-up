@@ -1,8 +1,10 @@
 <script lang="ts">
 import { getCategories } from '@/http/index'
 import type { ICategory } from '@/http/index'
+import CardCategory from '@/components/CardCategory.vue'
 
 export default {
+  components: { CardCategory },
   data() {
     return {
       categories: [] as ICategory[]
@@ -22,7 +24,9 @@ export default {
     </p>
 
     <ul class="categories">
-      <li v-for="(category, index) in categories" v-bind:key="index">{{ category.name }}</li>
+      <li v-for="(category, index) in categories" v-bind:key="index">
+        <CardCategory :category="category" />
+      </li>
     </ul>
     <p class="paragraph tip">
       *Attention: considering that you have salt, pepper and water at home
