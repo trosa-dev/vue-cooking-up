@@ -1,7 +1,7 @@
 <script lang="ts">
 import type { ICategory } from '@/http'
 import type { PropType } from 'vue'
-import GenericTagVue from './GenericTag.vue'
+import SelectableIngredient from './SelectableIngredient.vue'
 
 export default {
   props: {
@@ -10,7 +10,7 @@ export default {
       required: true
     }
   },
-  components: { GenericTagVue }
+  components: { SelectableIngredient }
 }
 </script>
 
@@ -26,7 +26,7 @@ export default {
     </header>
     <ul class="ingredients__category">
       <li v-for="(ingredient, index) in category.ingredients" :key="index">
-        <GenericTagVue :text="ingredient" />
+        <SelectableIngredient :ingredient="ingredient" />
       </li>
     </ul>
   </article>
