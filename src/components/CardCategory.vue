@@ -1,6 +1,7 @@
 <script lang="ts">
 import type { ICategory } from '@/http'
 import type { PropType } from 'vue'
+import GenericTagVue from './GenericTag.vue'
 
 export default {
   props: {
@@ -8,7 +9,8 @@ export default {
       type: Object as PropType<ICategory>,
       required: true
     }
-  }
+  },
+  components: { GenericTagVue }
 }
 </script>
 
@@ -23,7 +25,9 @@ export default {
       <h2 class="paragraph-lg name__category">{{ category.name }}</h2>
     </header>
     <ul class="ingredients__category">
-      <li v-for="(ingredient, index) in category.ingredients" :key="index">{{ ingredient }}</li>
+      <li v-for="(ingredient, index) in category.ingredients" :key="index">
+        <GenericTagVue :text="ingredient" />
+      </li>
     </ul>
   </article>
 </template>

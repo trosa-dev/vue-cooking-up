@@ -1,11 +1,12 @@
 <script lang="ts">
+import GenericTag from './GenericTag.vue'
 import IngredientsSelectionVue from './IngredientsSelection.vue'
 
 export default {
   data() {
     return { ingredients: ['Garlic', 'Butter', 'Oregano'] }
   },
-  components: { IngredientsSelectionVue }
+  components: { IngredientsSelectionVue, GenericTag }
 }
 </script>
 
@@ -14,8 +15,8 @@ export default {
     <section>
       <span class="subtitle-lg your-list-text"> Your list: </span>
       <ul v-if="ingredients.length > 0" class="your-ingredients-list">
-        <li v-for="(ingredient, index) in ingredients" v-bind:key="index" class="ingredient">
-          {{ ingredient }}
+        <li v-for="(ingredient, index) in ingredients" v-bind:key="index">
+          <GenericTag :text="ingredient" />
         </li>
       </ul>
 
@@ -53,18 +54,6 @@ export default {
   justify-content: center;
   gap: 1rem 1.5rem;
   flex-wrap: wrap;
-}
-
-.ingredient {
-  display: inline-block;
-  border-radius: 0.5rem;
-  min-width: 4.25rem;
-  padding: 0.5rem;
-  text-align: center;
-  transition: 0.2s;
-  color: var(--creme, #fffaf3);
-  background: var(--coral, #f0633c);
-  font-weight: 700;
 }
 
 .empty-list {
