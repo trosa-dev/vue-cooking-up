@@ -1,13 +1,13 @@
 :root {
 	--ocre: #D1451E;
 	--coral: #F0633C;
-	--coral-claro: #FFDBD1;
-	--creme: #FFFAF3;
-	--verde-escuro: #263A29;
-	--verde-medio: #3D6D4A;
-	--cinza: #444444;
-	--cinza-claro: #EFEFEF;
-	--branco: #FFF;
+	--light-coral: #FFDBD1;
+	--cream: #FFFAF3;
+	--dark-green: #263A29;
+	--mean-green: #3D6D4A;
+	--gray: #444444;
+	--light-gray: #EFEFEF;
+	--white: #FFF;
 
 	--font-family-padrao: Nunito Sans, sans-serif;
 	--headers: Paytone One, sans-serif;
@@ -34,12 +34,12 @@ button {
 
 body {
 	min-height: 100vh;
-	color: var(--creme);
+	color: var(--cream);
 	font-family: var(--font-family-padrao);
 	font-size: 16px;
 	font-weight: 400;
 	font-style: normal;
-	background: url('./images/background-banner.png'), var(--verde-escuro, #263A29);
+	background: url('./images/background-banner.png'), var(--dark-green, #263A29);
 }
 
 .header-lg {
