@@ -16,7 +16,7 @@ export default {
       <span class="subtitle-lg your-list-text"> Your list: </span>
       <ul v-if="ingredients.length > 0" class="your-ingredients-list">
         <li v-for="(ingredient, index) in ingredients" v-bind:key="index">
-          <GenericTag :text="ingredient" />
+          <GenericTag :text="ingredient" selected />
         </li>
       </ul>
 
@@ -33,7 +33,7 @@ export default {
 .main-content {
   padding: 6.5rem 7.5rem;
   border-radius: 3.75rem 3.75rem 0rem 0rem;
-  background: var(--creme, #fffaf3);
+  background: var(--cream, #fffaf3);
   color: var(--cinza, #444);
 
   display: flex;
