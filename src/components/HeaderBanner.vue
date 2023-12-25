@@ -20,7 +20,7 @@ export default {}
 <style scoped>
 .banner {
   padding: 4rem 7.5rem;
-  color: var(--creme);
+  color: var(--cream);
 
   display: flex;
   justify-content: space-between;
@@ -38,7 +38,7 @@ export default {}
 }
 
 .text-verde {
-  color: var(--verde-medio, #3d6d4a);
+  color: var(--mean-green, #3d6d4a);
 }
 
 .image-banner {

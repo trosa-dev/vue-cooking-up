@@ -42,7 +42,7 @@ export default {
 }
 
 .ingredients-title {
-  color: var(--verde-medio, #3d6d4a);
+  color: var(--mean-green, #3d6d4a);
   display: block;
   margin-bottom: 1.5rem;
 }
