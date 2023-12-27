@@ -13,7 +13,7 @@ export default {}
       <p class="subtitle-lg">Explore new recipes every day with ingredients at your fingertips!</p>
     </div>
 
-    <img src="../assets/images/image-banner.png" alt="" class="image-banner" />
+    <img src="../../assets/images/image-banner.png" alt="" class="image-banner" />
   </header>
 </template>
 
