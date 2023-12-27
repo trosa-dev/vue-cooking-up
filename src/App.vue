@@ -1,6 +1,6 @@
 <script lang="ts">
-import HeaderBanner from './components/HeaderBanner.vue'
-import MainContent from './components/MainContent.vue'
+import HeaderBanner from './components/HeaderBanner/HeaderBanner.vue'
+import MainContent from './components/MainContent/MainContent.vue'
 
 export default {
   components: { HeaderBanner, MainContent }

@@ -5,7 +5,7 @@ export default {}
 <template>
   <header class="banner">
     <div class="presentation">
-      <img src="../assets/images/logo.svg" alt="Cooking Up Logo" class="logo" />
+      <img src="../../assets/images/logo.svg" alt="Cooking Up Logo" class="logo" />
       <p class="header-lg phrase-header">
         <span class="text-verde">A feast of ideas for</span>
         awaken the chef in you!

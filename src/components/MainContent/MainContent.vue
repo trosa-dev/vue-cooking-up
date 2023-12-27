@@ -1,6 +1,6 @@
 <script lang="ts">
-import GenericTag from './GenericTag.vue'
-import IngredientsSelectionVue from './IngredientsSelection.vue'
+import GenericTag from '@/components/GenericTag/GenericTag.vue'
+import IngredientsSelectionVue from './components/IngredientsSelection/IngredientsSelection.vue'
 
 export default {
   data() {
@@ -29,7 +29,7 @@ export default {
       </ul>
 
       <p v-else class="paragraph empty-list">
-        <img src="../assets/images/icons/empty-list.svg" alt="search icon" />
+        <img src="../../assets/images/icons/empty-list.svg" alt="search icon" />
         Your list is empty, select ingredients to start.
       </p>
     </section>

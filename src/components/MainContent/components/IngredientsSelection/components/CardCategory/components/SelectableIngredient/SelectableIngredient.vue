@@ -1,5 +1,5 @@
 <script lang="ts">
-import GenericTag from './GenericTag.vue'
+import GenericTag from '@/components/GenericTag/GenericTag.vue'
 
 export default {
   components: { GenericTag },

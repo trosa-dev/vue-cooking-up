@@ -1,7 +1,7 @@
 <script lang="ts">
 import { getCategories } from '@/http/index'
 import type { ICategory } from '@/http/index'
-import CardCategory from '@/components/CardCategory.vue'
+import CardCategory from './components/CardCategory/CardCategory.vue'
 
 export default {
   components: { CardCategory },

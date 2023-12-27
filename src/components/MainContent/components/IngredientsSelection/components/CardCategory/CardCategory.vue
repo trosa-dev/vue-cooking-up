@@ -1,7 +1,7 @@
 <script lang="ts">
 import type { ICategory } from '@/http'
 import type { PropType } from 'vue'
-import SelectableIngredient from './SelectableIngredient.vue'
+import SelectableIngredient from './components/SelectableIngredient/SelectableIngredient.vue'
 
 export default {
   props: {
