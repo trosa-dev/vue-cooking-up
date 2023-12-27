@@ -12,7 +12,8 @@ export default {
   },
   async created() {
     this.categories = await getCategories()
-  }
+  },
+  emits: ['addIngredient', 'removeIngredient']
 }
 </script>
 
@@ -25,7 +26,11 @@ export default {
 
     <ul class="categories">
       <li v-for="(category, index) in categories" v-bind:key="index">
-        <CardCategory :category="category" />
+        <CardCategory
+          :category="category"
+          @add-ingredient="$emit('addIngredient', $event)"
+          @remove-ingredient="$emit('removeIngredient', $event)"
+        />
       </li>
     </ul>
     <p class="paragraph tip">

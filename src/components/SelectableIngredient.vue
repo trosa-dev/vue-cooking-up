@@ -8,12 +8,26 @@ export default {
     return {
       selected: false
     }
-  }
+  },
+  methods: {
+    onclick() {
+      this.selected = !this.selected
+
+      if (this.selected) {
+        this.$emit('addIngredient', this.ingredient)
+      }
+
+      if (!this.selected) {
+        this.$emit('removeIngredient', this.ingredient)
+      }
+    }
+  },
+  emits: ['addIngredient', 'removeIngredient']
 }
 </script>
 
 <template>
-  <button class="ingredient" @click="selected = !selected" :aria-pressed="selected">
+  <button class="ingredient" @click="onclick()" :aria-pressed="selected">
     <GenericTag :text="ingredient" :selected="selected" />
   </button>
 </template>

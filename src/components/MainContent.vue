@@ -4,9 +4,17 @@ import IngredientsSelectionVue from './IngredientsSelection.vue'
 
 export default {
   data() {
-    return { ingredients: ['Garlic', 'Butter', 'Oregano'] }
+    return { ingredients: [] as string[] }
   },
-  components: { IngredientsSelectionVue, GenericTag }
+  components: { IngredientsSelectionVue, GenericTag },
+  methods: {
+    addIngredient(ingredient: string) {
+      this.ingredients.push(ingredient)
+    },
+    removeIngredient(ingredient: string) {
+      this.ingredients = this.ingredients.filter((elemento: string) => elemento !== ingredient)
+    }
+  }
 }
 </script>
 
@@ -25,7 +33,10 @@ export default {
         Your list is empty, select ingredients to start.
       </p>
     </section>
-    <IngredientsSelectionVue />
+    <IngredientsSelectionVue
+      @add-ingredient="addIngredient($event)"
+      @remove-ingredient="removeIngredient($event)"
+    />
   </main>
 </template>
 
